@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html
+  lang="pl"
+  class="light-style layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Dashboard | Zgłoszenia TEB</title>
+
+    <meta name="description" content="" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://tebwroclaw.veritysystems.pl/tebteams/static/teb_teams_management/sneat/img/favicon/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+          
+            <span class="app-brand-logo demo"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 318.79 467.27"><defs><style>.cls-1{fill:#e30613;}.cls-2{fill:#fff;}</style></defs><title>teb_technikum_pion_kontra</title><rect class="cls-1" width="318.79" height="467.27"></rect><path class="cls-2" d="M73,70.05H50.5V51.92h65.57V70.05H93.69v62.48H73Z"></path><path class="cls-2" d="M125.93,51.92h58.82V69.44H146.62V82.86h37.29V100.5H146.62V115h38.13v17.52H125.93Z"></path><path class="cls-2" d="M196.78,51.92h45.47c15.88,0,23.46,10.39,23.46,20.54S259.58,89.26,252,91c8.54,1.33,15.28,9.54,15.28,19.69,0,11.73-7.82,21.88-23.58,21.88H196.78ZM237.56,83.1a6.81,6.81,0,0,0,7.1-7,6.72,6.72,0,0,0-7.1-6.89H217.47V83.1Zm.72,32.15c4.94,0,7.94-3,7.94-7.37,0-4.11-2.88-7.62-7.94-7.62H217.47v15Z"></path><path class="cls-2" d="M57,397.06H49.62v-4.77H69.81v4.77H62.45v20.66H57Z"></path><path class="cls-2" d="M73.27,392.29H91.18v4.65H78.66v5.53H90.92v4.65H78.66V413H91.18v4.69H73.27Z"></path><path class="cls-2" d="M94.18,405c0-7.82,5.89-13.16,13.29-13.16a11.66,11.66,0,0,1,10.77,6.22l-4.63,2.28a6.92,6.92,0,0,0-6.14-3.7c-4.41,0-7.75,3.55-7.75,8.36s3.34,8.35,7.75,8.35a6.85,6.85,0,0,0,6.14-3.7l4.63,2.25a11.74,11.74,0,0,1-10.77,6.25C100.07,418.18,94.18,412.84,94.18,405Z"></path><path class="cls-2" d="M138.82,407.05h-12v10.67h-5.39V392.29h5.39v10h12v-10h5.42v25.43h-5.42Z"></path><path class="cls-2" d="M154.61,400.64v17.08h-5.39V392.29h5.54l11.72,16.47V392.29h5.39v25.43h-5.2Z"></path><path class="cls-2" d="M176.89,392.29h5.39v25.43h-5.39Z"></path><path class="cls-2" d="M194.65,407.54l-2,2.37v7.81h-5.38V392.29h5.38v11.36l9-11.36h6.64l-10.06,11.93L209,417.72h-6.64Z"></path><path class="cls-2" d="M211.42,392.29h5.47v15.1c0,3.55,1.93,6,5.88,6s5.81-2.44,5.81-6v-15.1H234v15.25c0,6.33-3.6,10.64-11.27,10.64s-11.35-4.35-11.35-10.6Z"></path><path class="cls-2" d="M261.07,399.42l-7.14,18.3h-2.35l-7.14-18.3v18.3h-5.38V392.29h7.55l6.14,15.86,6.15-15.86h7.59v25.43h-5.42Z"></path><path class="cls-2" d="M158.79,148.5v25.62h82.87v70.43H164.08L68.46,148.5h-18V262.67L158.79,371.53,267.15,262.67V148.5Zm0,186.8L75.93,252.06V192.23l77.58,77.94h70.12Z"></path></svg>
+            </span>
+            <span class="app-brand-text demo menu-text fw-bold ms-2">Zgłoszenia TEB</span>
+            
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-school"></i>
+                <div data-i18n="Basic">Szkoły</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-building-house"></i>
+                <div data-i18n="Basic">Oddziały szkolne</div>
+              </a>
+            </li>
+            <!-- Cards -->
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-target-lock"></i>
+                <div data-i18n="Basic">Oddziały specyficzne</div>
+              </a>
+            </li>
+            <!-- User interface -->
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-group"></i>
+                <div data-i18n="Basic">Uczniowie</div>
+              </a>
+            </li>
+
+            <!-- Nauczyciele -->
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-graduation"></i>
+                <div data-i18n="Basic">Nauczyciele</div>
+              </a>
+            </li>
+
+            <!--Przedmioty-->
+            <li class="menu-item">
+              <a href="cards-basic.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-extension"></i>
+                <div data-i18n="Basic">Przedmioty</div>
+              </a>
+            </li>
+            
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none ps-1 ps-sm-2"
+                    placeholder="Search..."
+                    aria-label="Search..." />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Place this tag where you want the button to render. -->
+                <li class="nav-item lh-1 me-3">
+                  <a
+                    class="github-button"
+                    href="https://github.com/themeselection/sneat-html-admin-template-free"
+                    data-icon="octicon-star"
+                    data-size="large"
+                    data-show-count="true"
+                    aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
+                    >Star</a
+                  >
+                </li>
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../../1.png" alt class="w-px-40 h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../../1.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-medium d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">Mój profil</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-cog me-2"></i>
+                        <span class="align-middle">Ustawienia</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="login.html">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">LogIn</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+
+          <div class="content-wrapper">
+            <div class="container">
+              <div class="card">
+                <div class="card-body"> 
+                  <h3 class="login">Zalogowano jako:Przemek Jedlikowski</h3>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-9"><h3 class="hello_panel">witaj:pjlyoko</h3></div>
+                  <div class="col-3">
+                    <img src="../../man-with-laptop-light.png" alt="man with laptop">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
